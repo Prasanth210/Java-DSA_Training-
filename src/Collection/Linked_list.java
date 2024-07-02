@@ -1,3 +1,5 @@
+package Collection;
+
 public class Linked_list {
     public static void main(String[] args) throws Exception {
         List_implement ll=new List_implement();

@@ -1,3 +1,5 @@
+package Collection;
+
 import java.util.*;
 public class List_Tut {
     public static void main(String args[]){

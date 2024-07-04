@@ -1,3 +1,5 @@
+package Oops;
+
 import java.util.Scanner;
 class Operations {
 

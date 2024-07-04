@@ -1,4 +1,6 @@
-    import java.util.*;
+package Oops;
+
+import java.util.*;
     public class PalindromList {
         public static class Node {
             int data;

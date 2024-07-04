@@ -1,4 +1,4 @@
-import java.util.*;
+package Oops;
 
 public class Recursions {
     public static void main(String[] args) {

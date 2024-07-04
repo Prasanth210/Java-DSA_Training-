@@ -1,3 +1,5 @@
+package Oops;
+
 public class Maze_path {
     public static void main(String[] args){
         int n=2,r=0,c=0;

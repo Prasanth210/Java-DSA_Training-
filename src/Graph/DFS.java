@@ -27,9 +27,9 @@ public class DFS {
     public static void dfs(int node, boolean vis[], ArrayList<ArrayList<Integer>> adj,ArrayList<Integer>ls){
         vis[node]=true;
         ls.add(node);
-        for(Integer it:adj.get(node)){
-            if(vis[it]==false){
-                dfs(it,vis,adj,ls);
+        for(Integer it:adj.get(node)) {
+            if (vis[it] == false) {
+                dfs(it, vis, adj, ls);
             }
         }
     }

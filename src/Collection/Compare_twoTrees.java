@@ -30,12 +30,12 @@ public Compare_twoTrees(){
         System.out.println(compare(obj1.root,obj2.root));
 
     }
-    static boolean compare(Node root1,Node root2){
-    if(root1 == null && root2 == null){
+    static boolean compare(Node p,Node q){
+    if(p == null && q == null){
         return true;
     }
-    if(root1 != null && root2 != null){
-        return ((root1.data == root2.data) && (compare(root1.left,root2.left)) && (compare(root1.right,root2.right)));
+    if(p != null && q != null){
+        return ((p.data == q.data) && (compare(p.left,q.left)) && (compare(p.right,q.right)));
     }
     return false;
     }

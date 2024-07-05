@@ -1,5 +1,7 @@
 package Collection.Binary_search_tree;
 
+        // Give the max depth of a tree
+
 public class Depth_node {
     static class Node{
         int data;
@@ -13,9 +15,21 @@ public class Depth_node {
         }
     }
     public static void main(String[] args) {
-     Node root=new Node(1);
-     root.left=new Node(3);
-     root.right=new Node(2);
-     root.left.left=new Node(5);    
+        Node root=new Node(1);
+        root.left=new Node(2);
+        root.right=new Node(3);
+        root.left.left=new Node(4);
+        root.left.right=new Node(5);
+        root.right.left=new Node(6);
+        root.right.right=new Node(7);
+
+       System.out.println(maxdepth(root));
     }
+    static int maxdepth(Node root){
+        if(root == null){
+            return 0;
+        }
+        return 1+Math.max(maxdepth(root.left),maxdepth(root.right));
+    }
+
 }

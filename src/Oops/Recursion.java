@@ -16,8 +16,9 @@ public class Recursion {
 //      int[] arr={10,20,30};
 //      sum_substring(arr,0,"",0,30);
 //      System.out.println(Rec.Factorial(7));
-//        System.out.println(Rec.Fibbanic_number(5));
-//        Rec.Fibbanic_series(7);
+//        System.out.println(Rec.Fibbanic_number(18250));
+ //       Rec.Fibbanic_series(10);
+        System.out.print(fibbanic_num(100));
     }
 
     //print series of numbers
@@ -133,6 +134,7 @@ public class Recursion {
         }
         sum_substring(arr, idx + 1, set + arr[idx] + " ", sum + arr[idx], tar);
     }
+
     //To print factorial number
     int Factorial(int num) {
         if (num == 0) {
@@ -140,6 +142,7 @@ public class Recursion {
         }
         return Factorial(num - 1) * num;
     }
+
     //To print fibbanic number
     int Fibbanic_number(int num) {
         if (num <= 1) {
@@ -153,12 +156,18 @@ public class Recursion {
 
     void Fibbanic_series(int num) {
         if (num > 1) {
-            n3=n1+n2;
-            n1=n2;
-            n2=n3;
-            System.out.print(" "+n3);
+            n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+            System.out.print(" " + n3);
             Fibbanic_series(num - 1);
         }
 
     }
+    static int fibbanic_num(int num){
+            if (num <= 1) {
+                return 1;
+            }
+            return fibbanic_num(num - 1) + (num - 2);
+        }
 }

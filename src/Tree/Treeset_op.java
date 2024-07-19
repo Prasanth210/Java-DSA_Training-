@@ -21,6 +21,7 @@ public class Treeset_op {
             System.out.println(word+" ");
         }
         System.out.println(map);
+        
     }
     // So any values we put into a treeset should be auto sorted 😃
 }

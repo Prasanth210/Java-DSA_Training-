@@ -33,8 +33,11 @@ public class Basics {
 //        int [] price={7,1,5,3,6,4};
 //        Stock(price);
 //        Zoho10(4);
+         lengthOfLongestSubstring("abcabcbb");
         
     }
+
+
     static void Stock(int[] price){
         int profit=0;
         for(int n=1;n<price.length;n++){
@@ -258,4 +261,21 @@ public class Basics {
             }
         }
 
-}
+       static void lengthOfLongestSubstring(String s) {
+            Map<Character,Integer> hash=new HashMap<>();
+            int max=0;
+            int j=0;
+            for(int i=0;i<s.length();i++){
+                if (!hash.containsKey(s.charAt(i)) || hash.get(s.charAt(i)) < j) {
+                    hash.put(s.charAt(i), i);
+                    max = Math.max(max, i - j + 1);
+                } else {
+                    j = hash.get(s.charAt(i)) + 1;
+                    hash.put(s.charAt(i), i);
+                }
+
+            }
+           System.out.println(max);
+        }
+    }
+

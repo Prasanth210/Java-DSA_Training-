@@ -16,22 +16,12 @@ public class Insertion_sort {
            arr1[j+1]=key;
         }
 
-        for(int i=1;i<arr2.length;i++){
-            int key=arr2[i];
-            int j=i-1;
-
-            while(j>=0 && arr2[j]>key){
-                arr2[j+1]=arr2[j];
-                j=j-1;
-            }
-            arr2[j+1]=key;
+        for(int i=0;i<arr2.length;i++) {
+            System.out.print(arr1[i]+" ");
         }
-//        for(int i=0;i<arr2.length;i++) {
-//            System.out.print(arr1[i]+" ");
-//        }
 //       2 4 5 6 7 8 9 10
 //       1 2 3 4 6 7 8 9
-        merge_two_sarray(arr1,arr2);
+ //       merge_two_sarray(arr1,arr2);
     }
     public static void merge_two_sarray(int [] one,int[] two){
         int[] merge=new int[one.length+two.length];

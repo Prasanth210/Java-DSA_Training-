@@ -2,7 +2,7 @@ package Sorting_re;
 
 public class Merge_sort {
     public static void main(String[] args) {
-        int[] arr={50,45,8,1,99,2561,5,4,545};
+        int[] arr={5,8,1,6,7};
 
         mergesort(arr,0,arr.length-1);
 

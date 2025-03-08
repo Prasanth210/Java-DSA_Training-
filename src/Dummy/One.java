@@ -7,7 +7,7 @@ public class One {
         Scanner scan =new Scanner(System.in);
         int size= scan.nextInt();;
         for(int n=1;n<=size;n++){
-            System.out.print(n*n+" "+3*n+" ");
+            System.out.print(n*n+" "+n*n*n+" ");
 
         }
 

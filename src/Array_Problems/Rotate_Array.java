@@ -31,13 +31,22 @@ public class Rotate_Array {
     // optimized
 
     static void rot(int [] arr, int k){
+        int n = arr.length;
         if(k>=arr.length){
-            k %= arr.length;
+            k %= n;
         }
 
-        reverse(arr,0,arr.length-1);
-        reverse(arr,0,k-1);
-        reverse(arr,k,arr.length-1);
+        //right rotation
+//
+//        reverse(arr,0,n-1);
+//        reverse(arr,0,k-1);
+//        reverse(arr,k,n-1);
+
+        //Left rotation
+        reverse(arr, 0, k-1);
+        reverse(arr,k, n-1);
+        reverse(arr,0,n-1);
+
 
         for(int val:arr){
             System.out.print(val+" ");
